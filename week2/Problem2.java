@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Problem2 {
+public class git Problem2 {
     private static Long sumOfArray(int [] a){
         Long ans = 0L;
         int n = a.length;

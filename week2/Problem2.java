@@ -1,29 +1,7 @@
-package mahmoud.javatasks;
 import java.io.*;
-import java.lang.reflect.Array;
-import java.time.temporal.ChronoField;
-import java.util.*;
+import java.util.StringTokenizer;
 
-
-
-public class task2 {
-    static Long INF = 1_000_000_000_000_000_000L;
-
-    public static void problem1()throws IOException{
-        int n = sc.nextInt();
-        int neededNumber = sc.nextInt();
-        int [] a = new int[n];
-        for (int i = 0; i < n; ++i) a[i] = sc.nextInt();
-        int ans = -1;
-        for (int i = 0; i < n; ++i){
-            if (a[i] == neededNumber && i > 4){
-                ans = i; break;
-            }
-        }
-        pw.println(ans);
-        pw.flush();
-
-    }
+public class Problem2 {
     private static Long sumOfArray(int [] a){
         Long ans = 0L;
         int n = a.length;
@@ -34,7 +12,7 @@ public class task2 {
         assert (bot > 0);
         return (up * 1.0) / bot;
     }
-    public static void problem2() throws IOException{
+    public static void solve(int tc) throws IOException{
         int n = sc.nextInt();
         int [] a = new int[n];
         for (int i = 0; i < n; ++i) a[i] = sc.nextInt();
@@ -42,11 +20,6 @@ public class task2 {
         double ans = calcAverage(sum , n);
         pw.println(ans);
         pw.flush();
-
-    }
-    public static void solve(int tc) throws IOException{
-        problem1();
-
     }
     public static void main(String[] args) throws IOException {
         int tt ,tc; tc = 0; tt = 1;
@@ -93,5 +66,3 @@ public class task2 {
     static Scanner sc = new Scanner(System.in);
     static PrintWriter pw = new PrintWriter(System.out);
 }
-
-

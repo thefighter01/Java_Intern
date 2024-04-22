@@ -1,5 +1,3 @@
-import mahmoud.javatasks.task2;
-
 import java.io.*;
 import java.util.StringTokenizer;
 
